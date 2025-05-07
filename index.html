@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NadeFlow – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('https://esportligaen.dk/wp-content/uploads/2022/02/1329760-scaled-e1719488681569.webp') no-repeat center center/cover;
+      filter: blur(6px) brightness(0.6);
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin-bottom: 2.5rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      width: 280px;
+      max-width: 90%;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      background-color: #5a67d8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #434190;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 16px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div class="background"></div>
+<div class="content">
+  <h1>NadeFlow</h1>
+  <p>
+    The ultimate CS2 utility hub — made for competitive teams, orgs and individuals.
+    Discover, share, and train nades or create the ultimate strat-book with players in one unified platform.
+    <br><br>
+    Coming soon.
+  </p>
+  <form action="https://formspree.io/f/mzzrgbqe" method="POST">
+    <label for="email" class="sr-only">Email address</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" required />
+    <button type="submit">Notify Me</button>
+  </form>
+
+  <div class="footer">© 2025 NadeFlow – Built for CS2 teams</div>
+</div>
+</body>
+</html>
